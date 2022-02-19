@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+.proizvodi {
+  display: flex;
+  flex-wrap: wrap;
+}
+.proizvod {
+  width: 240px;
+  padding: 15px;
+  position: relative;
+}
+.proizvod > img {
+  width: 100%;
+  display: block;
+}
+.proizvod > a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  padding: 10px 0px;
+}
+.proizvod > .energy-price {
+  display: flex;
+}
+.proizvod > .energy-price > .energy,
+.proizvod > .energy-price > .price {
+  flex-basis: 0;
+  flex-grow: 1;
+  font-size: 18px;
+}
+.proizvod > .energy-price > .energy {
+  text-align: center;
+}
+.proizvod > .energy-price > .price {
+  text-align: right;
+}
+.proizvod > button {
+  border: none;
+  display: block;
+  width: 100%;
+  background-color: #5577ff;
+  color: white;
+  font-size: 24px;
+  border-radius: 10px;
+  padding: 10px 0px;
+}
+.proizvod > .novo {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  padding: 10px 0px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 16px;
+  border: 1px solid black;
+  border-radius: 15px;
+  background-color: #22ee22;
+  top: -5px;
+  right: -5px;
+}
